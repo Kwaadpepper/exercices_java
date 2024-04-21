@@ -11,7 +11,7 @@ public class Main {
             if(i > 0) {
                 multiplicationQuestion.append(" par ");
             }
-            var randomNumber = Main.getRandowmNumberBetween(0, 9);
+            var randomNumber = Main.getRandowmNumber(9);
             numbers.add(randomNumber);
             multiplicationQuestion.append(randomNumber);
         }
@@ -25,9 +25,9 @@ public class Main {
         }
     }
 
-    private static Integer getRandowmNumberBetween(Integer a, Integer b) {
+    private static Integer getRandowmNumber(Integer max) {
         Random rand = new Random();
-        return rand.nextInt(a, b);
+        return rand.nextInt(0, max);
     }
 
     private static Integer getInput(String message) {

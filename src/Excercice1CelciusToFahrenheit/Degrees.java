@@ -1,4 +1,4 @@
-package Excercice1;
+package Excercice1CelciusToFahrenheit;
 
 public abstract class Degrees implements Convertible  {
     protected Float degrees;
@@ -12,7 +12,7 @@ public abstract class Degrees implements Convertible  {
     protected String getSystemAnnotation (){
         return switch (system) {
             case DegreeSystem.celcius -> "C";
-            case DegreeSystem.farenheit -> "F";
+            case DegreeSystem.fahrenheit -> "F";
         };
     }
 
@@ -22,7 +22,7 @@ public abstract class Degrees implements Convertible  {
         }
         return switch (system) {
             case DegreeSystem.celcius -> new CelciusDegrees(this.toCelcius());
-            case DegreeSystem.farenheit -> new FarenheitDegrees((float) (this.toCelcius()  * 1.8 +32));
+            case DegreeSystem.fahrenheit -> new FahrenheitDegrees((float) (this.toCelcius()  * 1.8 +32));
         };
     }
 

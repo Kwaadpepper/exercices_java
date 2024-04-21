@@ -1,4 +1,4 @@
-package Excercice1;
+package Excercice1CelciusToFahrenheit;
 
 public class CelciusDegrees extends Degrees {
     public CelciusDegrees(Float degreesCelcius) {

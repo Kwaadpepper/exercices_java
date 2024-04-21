@@ -1,4 +1,4 @@
-package Excercice1;
+package Excercice1CelciusToFahrenheit;
 
 /**
  * Convert a degree system to another Interface

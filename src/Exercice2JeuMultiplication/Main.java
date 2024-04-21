@@ -1,4 +1,4 @@
-package Exercice2;
+package Exercice2JeuMultiplication;
 
 import java.util.*;
 

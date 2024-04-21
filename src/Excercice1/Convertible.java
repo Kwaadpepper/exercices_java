@@ -5,5 +5,5 @@ package Excercice1;
  */
 public interface Convertible {
     Degrees convertTo(DegreeSystem system);
-    Integer toCelcius();
+    Float toCelcius();
 }

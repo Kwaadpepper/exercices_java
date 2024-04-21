@@ -1,11 +1,11 @@
 package Excercice1;
 
 public class CelciusDegrees extends Degrees {
-    public CelciusDegrees(Integer degrees) {
-        super(degrees, DegreeSystem.celcius);
+    public CelciusDegrees(Float degreesCelcius) {
+        super(degreesCelcius, DegreeSystem.celcius);
     }
 
-    public Integer toCelcius() {
+    public Float toCelcius() {
         return this.degrees;
     }
 }
